@@ -1,0 +1,70 @@
+featureFlags:
+  flags:
+  - flag:
+      name: Foobar
+      identifier: Foobar
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: helloworld
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        state: "off"
+      - identifier: TestEnv
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        state: "off"
+      - identifier: WrongProd
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        state: "on"
+        targetRules:
+        - targets:
+          - identifier: foo
+          variation: "true"
+  - flag:
+      name: hello world
+      identifier: hello_world
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: helloworld
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        state: "off"
+      - identifier: TestEnv
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        state: "off"
+      - identifier: WrongProd
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        state: "off"
+  projectIdentifier: JamesTest
+  orgIdentifier: harness
