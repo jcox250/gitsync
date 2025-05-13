@@ -96,6 +96,6 @@ featureFlags:
         default:
           onVariation: "false"
           offVariation: "false"
-        state: "off"
+        state: "on"
   projectIdentifier: JamesTest
   orgIdentifier: harness
