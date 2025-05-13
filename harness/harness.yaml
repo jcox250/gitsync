@@ -1,37 +1,6 @@
 featureFlags:
   flags:
   - flag:
-      name: foo
-      identifier: foo
-      description: ""
-      permanent: false
-      spec:
-        type: string
-        default:
-          onVariation: s
-          offVariation: a
-        variations:
-        - identifier: s
-          value: s
-        - identifier: a
-          value: a
-      environments:
-      - identifier: helloworld
-        default:
-          onVariation: s
-          offVariation: a
-        state: "off"
-      - identifier: TestEnv
-        default:
-          onVariation: s
-          offVariation: a
-        state: "off"
-      - identifier: WrongProd
-        default:
-          onVariation: s
-          offVariation: a
-        state: "off"
-  - flag:
       name: Foobar
       identifier: Foobar
       description: ""
