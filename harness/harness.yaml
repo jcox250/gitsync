@@ -66,5 +66,36 @@ featureFlags:
           onVariation: "false"
           offVariation: "false"
         state: "off"
+  - flag:
+      name: tester
+      identifier: tester
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: helloworld
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        state: "off"
+      - identifier: TestEnv
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        state: "off"
+      - identifier: WrongProd
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        state: "off"
   projectIdentifier: JamesTest
   orgIdentifier: harness
