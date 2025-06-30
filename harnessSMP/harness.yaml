@@ -26,31 +26,5 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "off"
-  - flag:
-      name: m
-      identifier: m
-      description: ""
-      permanent: false
-      spec:
-        type: string
-        default:
-          onVariation: a
-          offVariation: b
-        variations:
-        - identifier: a
-          value: a
-        - identifier: b
-          value: b
-      environments:
-      - identifier: del
-        default:
-          onVariation: a
-          offVariation: b
-        state: "off"
-      - identifier: Test
-        default:
-          onVariation: a
-          offVariation: b
-        state: "off"
   projectIdentifier: JamesSMP
   orgIdentifier: default
