@@ -26,5 +26,9 @@ featureFlags:
           onVariation: "true"
           offVariation: "false"
         state: "on"
+        targetRules:
+        - targets:
+          - identifier: JamesAuthTest
+          variation: "false"
   projectIdentifier: JamesSMP
   orgIdentifier: default
