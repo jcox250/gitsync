@@ -1,0 +1,167 @@
+featureFlags:
+  flags:
+  - flag:
+      name: arya-test-flag
+      identifier: aryatestflag
+      description: test-descript
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      tags:
+      - tag:
+          name: arya
+          identifier: arya
+      environments:
+      - identifier: akashs
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        state: "off"
+      - identifier: arya
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        state: "off"
+      - identifier: test
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        state: "off"
+  - flag:
+      name: CDC_SERVICE_DASHBOARD_REVAMP_NG
+      identifier: CDC_SERVICE_DASHBOARD_REVAMP_NG
+      description: test on akashs
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: akashs
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "on"
+      - identifier: arya
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "on"
+      - identifier: test
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+  - flag:
+      name: CDS_TERRAFORM_S3_SUPPORT
+      identifier: CDS_TERRAFORM_S3_SUPPORT
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: akashs
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        state: "on"
+      - identifier: arya
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: test
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+  - flag:
+      name: My_Test_Flag
+      identifier: My_Test_Flag
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: akashs
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: arya
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+      - identifier: test
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "off"
+  - flag:
+      name: xyz-test
+      identifier: xyztest
+      description: desc
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      tags:
+      - tag:
+          name: def
+          identifier: def
+      environments:
+      - identifier: akashs
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        state: "off"
+      - identifier: arya
+        default:
+          onVariation: "true"
+          offVariation: "false"
+        state: "on"
+      - identifier: test
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        state: "off"
+  projectIdentifier: fftestarya
+  orgIdentifier: default
