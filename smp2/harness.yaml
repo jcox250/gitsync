@@ -32,6 +32,37 @@ featureFlags:
           offVariation: "false"
         state: "off"
   - flag:
+      name: aaaa
+      identifier: aaaa
+      description: ""
+      permanent: false
+      spec:
+        type: boolean
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        variations:
+        - identifier: "true"
+          value: "true"
+        - identifier: "false"
+          value: "false"
+      environments:
+      - identifier: akashs
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        state: "off"
+      - identifier: arya
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        state: "off"
+      - identifier: test
+        default:
+          onVariation: "false"
+          offVariation: "false"
+        state: "off"
+  - flag:
       name: arya-test-flag
       identifier: aryatestflag
       description: test-descript
