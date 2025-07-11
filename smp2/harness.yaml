@@ -84,7 +84,7 @@ featureFlags:
       environments:
       - identifier: akashs
         default:
-          onVariation: "false"
+          onVariation: "true"
           offVariation: "false"
         state: "on"
       - identifier: arya
